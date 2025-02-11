@@ -19,13 +19,12 @@ Ensure you have the following installed:
 Before running the script, set up the following environment variables:
 
 ```sh
-export CLUSTER_API_SERVER="https://10.1.149.63:6443"
+export CLUSTER_API_SERVER=""
 export ARGOCD_NAMESPACE="argocd"
-export CLUSTER_NAME="production"
-export LABEL="App1"
-export ARGOCD_KUBECONFIG="/home/$USER/Desktop/skupper/argocd.config"
-export TARGET_KUBECONFIG="/home/$USER/Desktop/skupper/master.config"
-export ARGOCD_SERVER="localhost:8080"
+export CLUSTER_NAME=""
+export LABEL=""
+export ARGOCD_KUBECONFIG=""
+export TARGET_KUBECONFIG=""
 ```
 
 ### Explanation of Variables:
@@ -35,8 +34,6 @@ export ARGOCD_SERVER="localhost:8080"
 - **LABEL** - Label used for identifying the cluster in ArgoCD.
 - **ARGOCD_KUBECONFIG** - Path to the kubeconfig file for the ArgoCD cluster.
 - **TARGET_KUBECONFIG** - Path to the kubeconfig file for the target cluster.
-- **ARGOCD_SERVER** - ArgoCD API server address.
-
 ---
 
 ## Setup and Execution
