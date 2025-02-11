@@ -1,0 +1,7 @@
+$env:CLUSTER_API_SERVER= "https://clusterapik3s-2aacaf65.westus.cloudapp.azure.com:6443"
+$env:ARGOCD_NAMESPACE = "argocd"
+$env:CLUSTER_NAME = "staging"
+$env:LABEL = "App1"
+$env:ARGOCD_KUBECONFIG = "C:\Users\RCC\Desktop\skupper\argocd.config"
+$env:TARGET_KUBECONFIG = "C:\Users\RCC\Desktop\skupper\new-cluster.yaml"
+$env:ARGOCD_SERVER = "localhost:8080"

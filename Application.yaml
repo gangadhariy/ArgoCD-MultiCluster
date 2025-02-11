@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: weather
+  namespace: argocd
+spec:
+  generators:
+    - clusters:  # Corrected from "clusters" to "cluster"
+        selector:  # Corrected from "selectors" to "selector"
+          matchLabels:
+            environment: App2
+  template:  # All applications will be created using this template
+    metadata:
+      name: weather-{{name}}  # Each app will have the cluster name
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/gangadhariy/weather-app.git
+        targetRevision: HEAD
+        path: Weather-App
+      destination:
+        namespace: default
+        server: "{{server}}"  # Dynamically selects the cluster
+      syncPolicy:
+        automated:
+          prune: true
