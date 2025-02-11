@@ -1,7 +1,0 @@
-export CLUSTER_API_SERVER="https://10.1.149.63:6443"
-export ARGOCD_NAMESPACE="argocd"
-export CLUSTER_NAME="production"
-export LABEL="App1"
-export ARGOCD_KUBECONFIG="/home/$USER/Desktop/skupper/argocd.config"
-export TARGET_KUBECONFIG="/home/$USER/Desktop/skupper/master.config"
-export ARGOCD_SERVER="localhost:8080"
